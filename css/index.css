@@ -1,0 +1,15 @@
+
+body {
+    background-color: black;
+}
+
+a {
+    color: green;
+}
+
+p{
+    color: green;
+    font-size: xx-large;
+    letter-spacing: 17px;
+    text-wrap: wrap;
+}
