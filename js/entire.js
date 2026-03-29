@@ -16,4 +16,4 @@ function askQuestions(){
     alert(`Great job! You got ${correctAnswers} out of ${rounds}`);
 }
 
-//askQuestions();
+askQuestions();
