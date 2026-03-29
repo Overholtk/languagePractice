@@ -12,7 +12,7 @@
 
 
 // Master data, includes entire alef-beys and related data
-var letters = ['א','אַ','אָ','ב','בֿ','ג','ד','ה','ו','וּ','װ','ױ','ז','ח','ט','י','יִ','ײ','ײַ','כּ','כ','ך','ל','מ','ם','נ','ן','ס','ע','פּ','פֿ','ץ','ק','ר','ש','שׂ','תּ','ת'];
+var letters = ['א','אַ','אָ','ב','בֿ','ג','ד','ה','ו','וּ','װ','ױ','ז','ח','ט','י','יִ','ײ','ײַ','כּ','כ','ך','ל','מ','ם','נ','ן','ס','ע','פּ','פֿ','ף','צ','ץ','ק','ר','ש','שׂ','תּ','ת'];
 
 var names = ['shtumer alef','pasekh alef','komets alef', 'beys','veys','giml','daled','hey','vov','melupm vov','tsvey vovn','vov yud','zayen','khes','tes','yud','khirek yud','tsvey yudn','pasekh tsvey yudn','kof','khof','langer khof','lamed','mem','shlos mem','nun','langer nun','samekh','ayen','pey','fey','langer fey','tsadek','langer tsadek','kuf','reysh','shin','sin','tof','sof'];
 
@@ -103,7 +103,6 @@ function askName(letters) {
         alert(`Wrong! This lettter ${values.letter} is called ${values.name}`);
     }
 }
-
 
 
 //shows the print form of a letter and asks for the sound it makes
