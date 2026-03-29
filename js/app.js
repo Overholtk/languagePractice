@@ -7,5 +7,5 @@ console.log(letters);
 var popQuiz = Math.floor(Math.random() * (100 - 0 +1) + 0);
 console.log(popQuiz);
 if(popQuiz == 69){
-    var input = alert(`Pop quiz!`);
+    alert(`Pop quiz!`);
 }

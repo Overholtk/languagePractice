@@ -1,13 +1,21 @@
 
 
-var vowelLetters = ['אַ','אָ','ו','וּ','י','יִ','ע'];
+//var vowelLetters = ['אַ','אָ','ו','וּ','י','יִ','ע'];
 
-var vowelNames = ['pasekh alef','komets alef','vov','melupm vov','yud','khirek yud','ayen']
+//var vowelNames = ['pasekh alef','komets alef','vov','melupm vov','yud','khirek yud','ayen']
 
-var vowelSounds = ['ah','oh','oo','oo','yuh/ih/ee','ih/ee','eh'];
+//var vowelSounds = ['ah','oh','oo','oo','yuh/ih/ee','ih/ee','eh'];
+var vowels = [];
+//console.log(allLetters);
+for(let i = 0; i < allLetters.length; i++){
+    //if(allLetters[i].type == 'vowel'){ vowels.push(allLetters[i])}
+    //console.log(allLetters[i].type);
+    if(allLetters[i].type.includes('vowel')){vowels.push(allLetters[i]);}
+}
 
 
 var correctAnswers = 0;
+console.log(vowels);
 
 
 function askQuestions(){
@@ -16,11 +24,13 @@ function askQuestions(){
     for(let i = 0; i < rounds; i++){
         var q = Math.floor(Math.random() * (1 - 0 +1) + 0);
         if(q == 0){
-            askName(vowelLetters, vowelNames, vowelSounds);
+            askName(vowels);
         }else{
-            askSound(vowelLetters, vowelNames, vowelSounds);
+            askSound(vowels);
         }
     }
+    
+
     alert(`Great job! You got ${correctAnswers} out of ${rounds}`);
 }
 
