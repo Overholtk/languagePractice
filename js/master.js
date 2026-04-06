@@ -96,6 +96,9 @@ function askName(letters) {
     var values = generate(letters);
     console.log(values);
     var input1 = prompt(`What is the name of the letter ${values.letter}`);
+    while(input1 == values.sound){
+        input1 = prompt(`That's the correct sound, but what is the name?`);
+    }
      if(input1 == values.name){
         alert(`Correct! The letter ${values.letter} is called ${values.name} and makes the sound ${values.sound}`);
         correctAnswers++;
